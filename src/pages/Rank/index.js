@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import {Header} from '../../component'
 
 // 这里几个页面级组件的结构都一样,改类名就行
-class Detail extends Component {
+class Rank extends Component {
     render () {
         return (
             <div>
                 <Header/>
-                Detail
+                Rank
             </div>
         )
     }
 }
 
-export default Detail
+export default Rank

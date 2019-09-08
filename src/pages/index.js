@@ -2,23 +2,23 @@ import Loadable from 'react-loadable';
 
 const Loading = () => null;
 
-const Home = Loadable ({
-    loader: () => import('./Home'),
+const Recommend = Loadable ({
+    loader: () => import('./Recommend'),
     loading: Loading
 });
 
-const Collecte = Loadable ({
-    loader: () => import('./Collecte'),
+const Rank = Loadable ({
+    loader: () => import('./Rank'),
     loading: Loading
 });
 
-const Detail = Loadable ({
-    loader: () => import('./Detail'),
+const Love = Loadable ({
+    loader: () => import('./Love'),
     loading: Loading
 });
 
-const Login = Loadable ({
-    loader: () => import('./Login'),
+const NewBooks = Loadable ({
+    loader: () => import('./NewBooks'),
     loading: Loading
 });
 
@@ -27,4 +27,4 @@ const NotFound = Loadable ({
     loading: Loading
 });
 
-export { Home, Detail, NotFound, Login, Collecte }
+export { Recommend, Rank, NotFound, Love, NewBooks }

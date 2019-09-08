@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // NavLinK作为跳转路由标签,如常用的侧边栏跳转高亮效果就可以使用这个标签
 import { NavLink } from 'react-router-dom';
+
 import './Header.scss'
 
 // 声明跳转路由时,当前跳转对象的背景色及颜色,以作高亮区分
@@ -13,10 +14,10 @@ class Header extends Component {
     render () {
         return (
             <nav>
-                <NavLink to = '/home' activeStyle = { selectedStyle }> 首页 </NavLink>
-                <NavLink to = '/Detail' activeStyle = { selectedStyle }> 详情 </NavLink>
-                <NavLink to = '/Login' activeStyle = { selectedStyle }> 登录 </NavLink>
-                <NavLink to = '/Collecte' activeStyle = { selectedStyle }> 收集 </NavLink>
+                <NavLink to = '/Recommend' activeStyle = { selectedStyle }> 推荐 </NavLink>
+                <NavLink to = '/Rank' activeStyle = { selectedStyle }> 排行 </NavLink>
+                <NavLink to = '/Love' activeStyle = { selectedStyle }> 爱情 </NavLink>
+                <NavLink to = '/NewBooks' activeStyle = { selectedStyle }> 新书 </NavLink>
             </nav>
         )
     }

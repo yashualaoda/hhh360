@@ -1,20 +1,20 @@
-import { Home, Detail, NotFound, Login, Collecte } from '../pages/index';
+import { Recommend, Rank, NotFound, Love, NewBooks } from '../pages/index';
 
 const routes = [{
-    path: '/home',
-    component: Home
+    path: '/Recommend',
+    component: Recommend
 },{
-    path: '/Collecte',
-    component: Collecte
+    path: '/Rank',
+    component: Rank
 },{
-    path: '/Detail',
-    component: Detail
+    path: '/NewBooks',
+    component: NewBooks
 },{
     path: '/404',
     components: NotFound
 },{
-    path: '/Login',
-    component: Login
+    path: '/Love',
+    component: Love
 }];
 
 export default routes
