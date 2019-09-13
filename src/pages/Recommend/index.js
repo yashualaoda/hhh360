@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 // import {Header} from '../../component';
 import {Header} from '@/component';
+import './Recommend.scss'
 class Recommend extends Component {
     render () {
         return (
-            <div className='home'>
+            <div className='recommend'>
                 <Header></Header>  
-                Recommend
+                <div className='recommend-content'>
+                    推荐视频
+                </div>
             </div>
         )
     }

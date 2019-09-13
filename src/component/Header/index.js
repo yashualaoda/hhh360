@@ -13,11 +13,11 @@ const selectedStyle = {
 class Header extends Component {
     render () {
         return (
-            <nav>
+            <nav className='header'>
                 <NavLink to = '/Recommend' activeStyle = { selectedStyle }> 推荐 </NavLink>
                 <NavLink to = '/Rank' activeStyle = { selectedStyle }> 排行 </NavLink>
-                <NavLink to = '/Love' activeStyle = { selectedStyle }> 爱情 </NavLink>
-                <NavLink to = '/NewBooks' activeStyle = { selectedStyle }> 新书 </NavLink>
+                <NavLink to = '/Love' activeStyle = { selectedStyle }> 分类 </NavLink>
+                <NavLink to = '/NewBooks' activeStyle = { selectedStyle }> 我的 </NavLink>
             </nav>
         )
     }
