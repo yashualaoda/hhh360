@@ -1,6 +1,6 @@
 //**所有请求 js文件 */ 
 import axios from 'axios'
-axios.defaults.baseURL = 'https://api.example.com';
+axios.defaults.baseURL = 'http://localhost:3666';
 // axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
@@ -11,7 +11,7 @@ params请求入参
 */ 
 const requestApi = ({
     url,
-    method,
+    method='get',
     params
 })=>{
     switch(method){
@@ -23,6 +23,8 @@ const requestApi = ({
             return axios.get(url,
                 params
             )
+        default:
+         break;
     }
 
 }
@@ -38,13 +40,18 @@ axios.interceptors.request.use(function (config) {
 // 添加响应拦截器
 axios.interceptors.response.use(function (response) {
     // 对响应数据做点什么
-    return response;
+    if(response.status === 200 && response.data)    return response.data;
+
   }, function (error) {
     // 对响应错误做点什么
     return Promise.reject(error);
   });
 // ----------------------------这是分割线----------------------------
-  const queryRecommendVideo = (obj)=>{
-    requestApi(obj)
+  const queryRecommendVideo = (params)=>{
+    return requestApi({
+      url:'/recommend/video',
+      method:'get',
+      params
+    })
   }
   export {queryRecommendVideo}
