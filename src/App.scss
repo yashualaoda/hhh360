@@ -1,10 +1,21 @@
 .App {
   // text-align: center;
-  color: red;
+  color: #303030;
   height: 100%;
   >div{
     min-height: 100%;
-    padding: 1rem .5rem;
+    padding: .2rem .15rem;
+    font-size: .16rem;
+  }
+  a{
+      text-decoration: none;
+      color: #303030;
+  }
+  a:hover{
+      color: #EE5C5C;
+  }
+  a:active{
+      color: #E40505;
   }
 }
 

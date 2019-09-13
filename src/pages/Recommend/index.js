@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import {Header} from '../../component';
-import {Header} from '@/component';
+import {Header} from '../../component';
+// import {Header} from '@/component';
 import './Recommend.scss'
 class Recommend extends Component {
     render () {

@@ -6,8 +6,8 @@ import './Header.scss'
 
 // 声明跳转路由时,当前跳转对象的背景色及颜色,以作高亮区分
 const selectedStyle = {
-    backgroundColor: 'red',
-    color: 'slategray'
+    // backgroundColor: 'red',
+    // color: 'slategray'
 }
 
 class Header extends Component {
