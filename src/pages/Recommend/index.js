@@ -19,28 +19,24 @@ class Recommend extends Component {
         )
         .then(res=>{
             this.setState({
-                recommendVideos:res
+                recommendVideos:res.recommendVideos
             })
         })
     }
     render () {
         let {recommendVideos} = this.state;
-        console.log(recommendVideos.length)
         return (
             <div className='recommend'>
                 <Header></Header>  
                 <div className='recommend-content'>
-                    推荐视频{recommendVideos.length}
+                    推荐视频
                     {
                         recommendVideos.length ?recommendVideos.map((item,idx)=>{
                             return (
-                                // <VideoComp videoInfo={item} key={`recommendVideo${idx}`}/>
-                                <div videoInfo={item} key={`recommendVideo${idx}`} >11111</div>
+                                <VideoComp videoInfo={item} key={`recommendVideo${idx}`}/>
                             )
                         }): null
                     }
-                    <p>ggggggggggg</p>
-                    <VideoComp/>
                 </div>
             </div>
         )
