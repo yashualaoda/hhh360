@@ -1,8 +1,8 @@
 //**所有请求 js文件 */ 
 import axios from 'axios'
 axios.defaults.baseURL = 'https://api.example.com';
-axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+// axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 /*
 url请求地址
@@ -47,4 +47,4 @@ axios.interceptors.response.use(function (response) {
   const queryRecommendVideo = (obj)=>{
     requestApi(obj)
   }
-  export default {requestApi}
+  export {queryRecommendVideo}
