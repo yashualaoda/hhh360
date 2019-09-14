@@ -1,2 +1,2 @@
-export { default as Header } from './Header'
-export { default as VideoComp } from './VideoComp'
+export { default as Header } from './Header/Header'
+export { default as VideoComp } from './VideoComp/VideoComp'
