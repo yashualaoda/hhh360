@@ -17,7 +17,13 @@ class VideoComp extends Component {
         let {videoInfo} = this.props;
         return (
             <div className='video-comp'>
-                <p className='video-title'>{videoInfo.title}</p>
+                <div className='video-image'>
+                    
+                </div>
+                <div className='video-info'>
+                    <p className='video-title'>{videoInfo.title}</p>
+                </div>
+               
             </div>
         )
     }
