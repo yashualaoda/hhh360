@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import {Header,VideoComp} from '@/component';
 import './Recommend.scss'
 import {queryRecommendVideo} from '@/libs/axiosList.js'
-import { SearchBar } from 'antd-mobile';
 class Recommend extends Component {
     constructor(props){
         super();
@@ -28,7 +27,7 @@ class Recommend extends Component {
         let {recommendVideos} = this.state;
         return (
             <div className='recommend'>
-                <SearchBar />
+               
                 <Header></Header>  
                 <div className='recommend-content'>
                     推荐视频<br/>
