@@ -4,6 +4,15 @@
         display: flex;
         flex-wrap: wrap;
         padding-top: 10px;
+
+        >.video-comp:nth-child(2n){
+            padding-left: 6px;
+
+        }
+        >.video-comp:nth-child(2n+1){
+            padding-right: 6px;
+
+        }
     }
 
 }

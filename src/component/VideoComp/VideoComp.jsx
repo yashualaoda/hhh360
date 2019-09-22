@@ -19,7 +19,7 @@ class VideoComp extends Component {
                 <div className='video-image'
                     style={{backgroundImage:`url(${videoInfo.videoImage})`}}
                 >
-                    
+                   <p> 浏览量：{videoInfo.lookNum}<span> 评论量：{videoInfo.commentNum}</span>{videoInfo.time}</p>
                 </div>
                 <div className='video-info'>
                     <p className='video-title'>{videoInfo.title}</p>

@@ -5,6 +5,13 @@
     .video-image{
         height: 100px;
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 6px;
+        >p{
+            white-space: nowrap;
+        }
     }
 
     // background-color: green;

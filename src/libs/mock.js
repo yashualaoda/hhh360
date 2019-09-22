@@ -15,6 +15,9 @@ Mock.mock('http://localhost:3666/recommend/video', 'get', () => {
       author: Random.cname(),
       type: Random.string('小吃店','奶茶店','早餐店'),
       videoImage:Random.image('200x100', '#50B347', '#FFF', 'Mock.js'),
+      lookNum:i+100,
+      commentNum:i+50,
+      time:Random.time('mm:ss')
     }
     recommendVideos.push(obj)
   }
