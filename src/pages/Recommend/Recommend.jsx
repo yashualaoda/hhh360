@@ -18,6 +18,7 @@ class Recommend extends Component {
             }
         )
         .then(res=>{
+            debugger
             this.setState({
                 recommendVideos:res.recommendVideos
             })
@@ -27,7 +28,6 @@ class Recommend extends Component {
         let {recommendVideos} = this.state;
         return (
             <div className='recommend'>
-               
                 <Header></Header>  
                 <div className='recommend-content'>
                     推荐视频<br/>

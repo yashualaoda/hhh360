@@ -141,6 +141,12 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins":[
+        ["import",{
+            "libraryName": "antd-mobile",
+            "style": "css"
+        }]
     ]
   },
   "theme": {
