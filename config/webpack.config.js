@@ -112,7 +112,7 @@ module.exports = function(webpackEnv) {
             // which in turn let's users customize the target behavior as per their needs.
             postcssNormalize(),
             require('postcss-pxtorem')({
-                rootValue: 48,
+                rootValue: 50,
                 unitPrecision: 5,
                 propList: ['*'],
                 selectorBlackList: [],

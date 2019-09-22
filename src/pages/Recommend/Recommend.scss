@@ -1,4 +1,9 @@
 .recommend{
     // padding: 1rem;
+    .recommend-content{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
 
 }

@@ -45,12 +45,6 @@ class Header extends Component {
                     ref={ref => this.autoFocusInst = ref}
 
             />
-            <nav>
-                {/* <NavLink to = '/Recommend' activeStyle = { selectedStyle }> 推荐 </NavLink>
-                <NavLink to = '/Rank' activeStyle = { selectedStyle }> 排行 </NavLink>
-                <NavLink to = '/Love' activeStyle = { selectedStyle }> 分类 </NavLink>
-                <NavLink to = '/NewBooks' activeStyle = { selectedStyle }> 我的 </NavLink> */}
-            </nav>
             <Tabs tabs={tabs}
                 initialPage={1}
                 onChange={(tab, index) => { console.log('onChange', index, tab); }}
