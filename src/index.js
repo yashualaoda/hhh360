@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom';
+import initReactFastclick from 'react-fastclick';
+initReactFastclick();
 
 ReactDOM.render(<BrowserRouter basename='/'>
     <Route component={App}></Route>
