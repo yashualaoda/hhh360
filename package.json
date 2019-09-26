@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.5.5",
+    "@babel/preset-env": "^7.6.2",
     "@svgr/webpack": "4.3.2",
     "@typescript-eslint/eslint-plugin": "1.13.0",
     "@typescript-eslint/parser": "1.13.0",
@@ -14,6 +15,7 @@
     "babel-loader": "8.0.6",
     "babel-plugin-import": "^1.12.1",
     "babel-plugin-named-asset-import": "^0.3.3",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-react-app": "^9.0.1",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
@@ -140,13 +142,22 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      [
+        "@babel/preset-env",
+        {
+            "useBuiltIns": "entry"
+        }
+      ]
     ],
-    "plugins":[
-        ["import",{
-            "libraryName": "antd-mobile",
-            "style": "css"
-        }]
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd-mobile",
+          "style": "css"
+        }
+      ]
     ]
   },
   "theme": {
