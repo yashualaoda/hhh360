@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 // import {Header} from '../../component';
-import { Header, VideoComp } from '@/component';
+import { VideoComp } from '@/component';
 import './Recommend.less';
 import { queryRecommendVideo } from '@/libs/axiosList.js';
-import { SearchBar, Tabs, WhiteSpace, Badge } from 'antd-mobile';
+import { SearchBar, Tabs, Badge } from 'antd-mobile';
+import { connect } from 'react-redux';
+import { updateAppLoading } from '@/store/action.js';
 class Recommend extends Component {
   constructor(props) {
     super();
@@ -22,6 +24,7 @@ class Recommend extends Component {
   };
   componentDidMount() {
     this.autoFocusInst.focus();
+    this.props.dispatch(updateAppLoading('loadding'));
     queryRecommendVideo({
       name: 1
     }).then(res => {
@@ -115,4 +118,9 @@ class Recommend extends Component {
   }
 }
 
-export default Recommend;
+export default connect(function mapStatetoProps(state) {
+  let { appLoading } = state;
+  return {
+    appLoading
+  };
+})(Recommend);
