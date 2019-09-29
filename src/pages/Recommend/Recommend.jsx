@@ -24,7 +24,7 @@ class Recommend extends Component {
   };
   componentDidMount() {
     this.autoFocusInst.focus();
-    this.props.dispatch(updateAppLoading('loadding'));
+    // this.props.dispatch(updateAppLoading('loading'));
     queryRecommendVideo({
       name: 1
     }).then(res => {
@@ -38,6 +38,13 @@ class Recommend extends Component {
       { tabs } = this.props;
     return (
       <div className="recommend">
+        {/* <p
+          onClick={() => {
+            this.props.dispatch(updateAppLoading('loading'));
+          }}
+        >
+          sdsdkfjjgdg
+        </p> */}
         <div className="header">
           <SearchBar
             value={searchValue}

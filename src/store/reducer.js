@@ -10,7 +10,7 @@
 // };
 import { combineReducers } from 'redux';
 
-const appLoading = (state = 'noLoadding', action) => {
+const appLoading = (state = 'noloading', action) => {
     switch (action.type) {
         case "updateAppLoading":
             return action.appLoading;

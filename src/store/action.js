@@ -1,4 +1,4 @@
-//更新全局loadding函数
+//更新全局loading函数
 const updateAppLoading = appLoading => {
     return {
         type: "updateAppLoading",
